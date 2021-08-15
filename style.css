@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    margin: 0;
     background: #32a8c8;
     color: #ffffff;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -14,6 +15,11 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
     text-align: center;
 }
 
@@ -83,4 +89,90 @@ body {
 
 .navbar {
     padding: .5rem 1rem;
+}
+
+.about
+{
+    max-height: 400px;
+    max-width: 1000px;
+    padding: 40px 40px 40px 40px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "img title"
+    "img intro"
+    "img resume-btn"
+    ;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef;
+}
+.title{
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    grid-area: title;
+}
+.intro{
+    color: #343a40;
+    text-align: center;
+    font-size: 20px;
+    grid-area: intro;
+}
+.dp{
+    grid-area: img;
+    display: flex;
+    align-items: center;
+}
+.dp img
+{
+    height: 300px;
+    border-radius: 100%;
+}
+.resume-btn-container{
+    display: flex;
+    justify-content: center;
+}
+.resume-btn{
+    margin-top: 30px;
+    border: 1px solid #343a40;
+    border-radius: 10px;
+    color: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    grid-area: btn;
+}
+.resume-btn:hover{
+    background-color: #343a40;
+    color: white;
+}
+@media only screen and (max-width : 800px) {
+    .about{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "title"
+    "intro"
+    "resume-btn"
+    ;
+    }
+    .dp{
+        display: none;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .intro{
+        font-size: 15px;
+    }
 }
