@@ -13,6 +13,7 @@ html {
 body {
     color: #ffffff;
     width: 100vw;
+    overflow-x:hidden ;
 }
 
 .navbar {
@@ -190,7 +191,7 @@ body {
 }
 
 .projects {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
