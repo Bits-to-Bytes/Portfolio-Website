@@ -13,7 +13,7 @@ html {
 body {
     color: #ffffff;
     width: 100vw;
-    overflow-x:hidden ;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -258,7 +258,7 @@ body {
     height: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    place-items: center;
 }
 
 .skills-wrapper {
@@ -366,10 +366,10 @@ progress[value] {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    .contact-me{
+    .contact-me {
         margin-top: 2rem;
     }
-    .contact-me .credits{
+    .contact-me .credits {
         text-align: center;
     }
 }
